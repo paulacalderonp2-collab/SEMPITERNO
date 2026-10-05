@@ -249,3 +249,119 @@ body {
     transform: translateY(-5px);
     border-color: whitesmoke;
 }
+
+.formulario-contacto {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto 60px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #444;
+    background-color: black;
+    color: whitesmoke;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario-contacto h2 {
+    text-align: center;
+    margin: 0 0 20px;
+
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.formulario-contacto label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #444;
+    background-color: black;
+    color: whitesmoke;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+}
+
+.formulario-contacto button {
+    padding: 12px;
+
+    border: 1px solid whitesmoke;
+    background-color: black;
+    color: whitesmoke;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+@media (max-width: 768px) {
+
+    ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px 40px;
+    }
+
+    .galeria-women,
+    .galeria-new {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .galeria-limited {
+        flex-direction: column;
+    }
+
+    .galeria-women img,
+    .galeria-new img,
+    .galeria-limited img {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .titulo-pagina {
+        font-size: 32px;
+    }
+
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario-contacto {
+        width: 90%;
+        padding: 20px;
+    }
+}
